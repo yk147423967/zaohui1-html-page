@@ -3,819 +3,831 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>综合资讯简报 | 2025年5月25日—31日</title>
+<title>度点科技 · 驰腾品牌 资讯简报 | 2026年5月27日 - 6月3日</title>
 <style>
   :root {
+    --primary: #1a73e8;
+    --primary-light: #e8f0fe;
+    --accent: #f97316;
+    --accent-light: #fff7ed;
+    --success: #16a34a;
+    --success-light: #f0fdf4;
     --bg: #f8fafc;
-    --card-bg: #ffffff;
+    --card: #ffffff;
     --text: #1e293b;
     --text-secondary: #64748b;
     --border: #e2e8f0;
-    --primary: #6366f1;
-    --primary-light: #eef2ff;
-    --accent-1: #f97316;
-    --accent-2: #10b981;
-    --accent-3: #3b82f6;
-    --accent-4: #8b5cf6;
-    --accent-5: #ec4899;
-    --accent-6: #06b6d4;
-    --accent-7: #f59e0b;
-    --accent-8: #84cc16;
-    --accent-9: #14b8a6;
-    --accent-10: #ef4444;
-    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-    --shadow-md: 0 4px 6px rgba(0,0,0,0.05), 0 2px 4px rgba(0,0,0,0.03);
     --radius: 12px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --text: #e2e8f0;
-      --text-secondary: #94a3b8;
-      --border: #334155;
-      --primary-light: #1e1b4b;
-      --shadow: 0 1px 3px rgba(0,0,0,0.2);
-      --shadow-md: 0 4px 6px rgba(0,0,0,0.25);
-    }
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
     background: var(--bg);
     color: var(--text);
     line-height: 1.7;
-    padding: 24px;
+    padding: 0;
   }
-  .container { max-width: 1000px; margin: 0 auto; }
-
-  /* Header */
   .header {
-    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #1a73e8 100%);
     color: white;
-    padding: 36px 40px;
-    border-radius: var(--radius);
-    margin-bottom: 28px;
-    box-shadow: 0 8px 30px rgba(99,102,241,0.25);
+    padding: 40px 32px;
+    text-align: center;
   }
-  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
-  .header .subtitle { font-size: 15px; opacity: 0.9; }
+  .header .brand {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .header .subtitle {
+    font-size: 15px;
+    opacity: 0.85;
+  }
   .header .meta {
-    display: flex; gap: 20px; margin-top: 14px; font-size: 13px; opacity: 0.85; flex-wrap: wrap;
-  }
-  .header .meta span {
-    background: rgba(255,255,255,0.18); padding: 4px 12px; border-radius: 20px;
-  }
-
-  /* Section */
-  .section { margin-bottom: 32px; }
-  .section-title {
-    font-size: 18px; font-weight: 700; padding: 8px 0 8px 16px;
-    border-left: 4px solid var(--primary); margin-bottom: 16px;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .section-title .icon { font-size: 20px; }
-  .section-title .count {
-    font-size: 13px; font-weight: 500; color: var(--text-secondary);
-    background: var(--border); padding: 2px 10px; border-radius: 12px; margin-left: auto;
-  }
-
-  /* Cards */
-  .card-grid { display: grid; gap: 14px; }
-  .card {
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    padding: 18px 20px;
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border);
-    transition: box-shadow 0.2s, transform 0.15s;
-    position: relative;
-    overflow: hidden;
-  }
-  .card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-1px);
-  }
-  .card .tag {
-    display: inline-block; font-size: 11px; font-weight: 600;
-    padding: 2px 10px; border-radius: 10px; margin-bottom: 8px;
-    text-transform: uppercase; letter-spacing: 0.3px;
-  }
-  .card h3 {
-    font-size: 16px; font-weight: 600; margin-bottom: 6px; line-height: 1.5;
-  }
-  .card h3 a {
-    color: var(--text); text-decoration: none;
-  }
-  .card h3 a:hover { color: var(--primary); }
-  .card p { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
-  .card .meta-row {
-    display: flex; align-items: center; gap: 12px; margin-top: 10px; font-size: 12px; color: var(--text-secondary);
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 13px;
+    opacity: 0.75;
     flex-wrap: wrap;
   }
-  .card .source {
-    background: var(--primary-light); color: var(--primary); padding: 2px 8px;
-    border-radius: 6px; font-weight: 500;
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 20px;
   }
-  .card .time { opacity: 0.75; }
-
-  /* Accent border colors per category */
-  .cat-1 .card { border-left: 3px solid var(--accent-1); }
-  .cat-2 .card { border-left: 3px solid var(--accent-2); }
-  .cat-3 .card { border-left: 3px solid var(--accent-3); }
-  .cat-4 .card { border-left: 3px solid var(--accent-4); }
-  .cat-5 .card { border-left: 3px solid var(--accent-5); }
-  .cat-6 .card { border-left: 3px solid var(--accent-6); }
-  .cat-7 .card { border-left: 3px solid var(--accent-7); }
-  .cat-8 .card { border-left: 3px solid var(--accent-8); }
-  .cat-9 .card { border-left: 3px solid var(--accent-9); }
-  .cat-10 .card { border-left: 3px solid var(--accent-10); }
-
-  .cat-1 .tag { background: #fff7ed; color: var(--accent-1); }
-  .cat-2 .tag { background: #ecfdf5; color: var(--accent-2); }
-  .cat-3 .tag { background: #eff6ff; color: var(--accent-3); }
-  .cat-4 .tag { background: #f5f3ff; color: var(--accent-4); }
-  .cat-5 .tag { background: #fdf2f8; color: var(--accent-5); }
-  .cat-6 .tag { background: #ecfeff; color: var(--accent-6); }
-  .cat-7 .tag { background: #fffbeb; color: var(--accent-7); }
-  .cat-8 .tag { background: #f7fee7; color: var(--accent-8); }
-  .cat-9 .tag { background: #f0fdfa; color: var(--accent-9); }
-  .cat-10 .tag { background: #fef2f2; color: var(--accent-10); }
-
-  @media (prefers-color-scheme: dark) {
-    .cat-1 .tag { background: #431407; color: #fb923c; }
-    .cat-2 .tag { background: #022c22; color: #34d399; }
-    .cat-3 .tag { background: #172554; color: #60a5fa; }
-    .cat-4 .tag { background: #1e1b4b; color: #a78bfa; }
-    .cat-5 .tag { background: #4a0e2e; color: #f472b6; }
-    .cat-6 .tag { background: #042f2e; color: #22d3ee; }
-    .cat-7 .tag { background: #451a03; color: #fbbf24; }
-    .cat-8 .tag { background: #1a2e05; color: #a3e635; }
-    .cat-9 .tag { background: #042f2e; color: #5eead4; }
-    .cat-10 .tag { background: #450a0a; color: #f87171; }
+  .section {
+    margin-bottom: 32px;
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    border: 1px solid var(--border);
   }
-
-  /* Footer */
-  .footer {
-    text-align: center; padding: 28px; color: var(--text-secondary); font-size: 13px;
-    border-top: 1px solid var(--border); margin-top: 32px;
+  .section-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
-  .footer a { color: var(--primary); text-decoration: none; }
-
-  /* Highlight box */
+  .section-header .icon {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .section-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .section-header .count {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-left: auto;
+    background: #f1f5f9;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  .section-body {
+    padding: 0;
+  }
+  .item {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.15s;
+  }
+  .item:last-child { border-bottom: none; }
+  .item:hover { background: #f8fafc; }
+  .item .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .tag-opportunity { background: var(--success-light); color: var(--success); }
+  .tag-alert { background: #fef2f2; color: #dc2626; }
+  .tag-insight { background: var(--accent-light); color: var(--accent); }
+  .tag-competitor { background: #fef3c7; color: #b45309; }
+  .item h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+  .item h4 a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .item h4 a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+  .item p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+  .item .source {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 6px;
+  }
+  .item .source a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .item .source a:hover { text-decoration: underline; }
   .highlight-box {
-    background: var(--primary-light); border: 1px solid var(--primary);
-    border-radius: var(--radius); padding: 16px 20px; margin-bottom: 16px;
-    font-size: 14px; line-height: 1.7;
+    margin: 12px 0;
+    padding: 12px 16px;
+    background: var(--primary-light);
+    border-left: 3px solid var(--primary);
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
   }
-  .highlight-box strong { color: var(--primary); }
-
-  .toc { margin-bottom: 24px; }
+  .highlight-box.orange {
+    background: var(--accent-light);
+    border-left-color: var(--accent);
+  }
+  .highlight-box.green {
+    background: var(--success-light);
+    border-left-color: var(--success);
+  }
+  .footer {
+    text-align: center;
+    padding: 32px;
+    color: var(--text-secondary);
+    font-size: 13px;
+  }
+  .toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
   .toc a {
-    display: inline-block; padding: 4px 14px; margin: 4px 6px 4px 0;
-    background: var(--card-bg); border: 1px solid var(--border);
-    border-radius: 20px; font-size: 13px; color: var(--text); text-decoration: none;
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 13px;
+    color: var(--primary);
+    text-decoration: none;
     transition: all 0.2s;
   }
-  .toc a:hover { background: var(--primary); color: white; border-color: var(--primary); }
+  .toc a:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+  .notice {
+    margin-bottom: 24px;
+    padding: 12px 18px;
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #92400e;
+  }
+  @media (max-width: 640px) {
+    .header { padding: 28px 20px; }
+    .header h1 { font-size: 22px; }
+    .container { padding: 16px 12px; }
+    .section-body .item { padding: 14px 16px; }
+  }
 </style>
 </head>
 <body>
+
+<div class="header">
+  <div class="brand">深圳市度点科技有限公司 · 驰腾 CHITENG</div>
+  <h1>📋 综合资讯简报</h1>
+  <div class="subtitle">同行 · 行业 · 电商 · AI · 政策 · 热梗 全维度追踪</div>
+  <div class="meta">
+    <span>📅 2026年5月27日 — 6月3日</span>
+    <span>📊 共8大板块 · 68条资讯</span>
+    <span>🏷️ 生成时间：2026年6月3日</span>
+  </div>
+</div>
+
 <div class="container">
 
-<!-- HEADER -->
-<div class="header">
-  <h1>📋 综合资讯简报</h1>
-  <div class="subtitle">2025年5月25日（周日）— 5月31日（周六）</div>
-  <div class="meta">
-    <span>📅 覆盖7天</span>
-    <span>📂 10大主题板块</span>
-    <span>🔍 多源采集</span>
-  </div>
+<div class="notice">
+  <strong>📌 说明：</strong>每条资讯标题均可点击跳转至原始来源网页。所有链接均来自真实公开报道，可自行验证。部分行业报告链接需在PC端打开。
 </div>
 
-<!-- TOC -->
+<!-- 目录 -->
 <div class="toc">
-  <a href="#s1">🏷️ 标签打印/条码</a>
-  <a href="#s2">🔥 热梗/爆款/热搜</a>
-  <a href="#s3">🏢 度点科技同行</a>
+  <a href="#s1">🏢 同行及上下游</a>
+  <a href="#s2">🏷️ 标签/条码/耗材/软件</a>
+  <a href="#s3">🆕 新奇特/新类目</a>
   <a href="#s4">🛒 国内电商</a>
   <a href="#s5">🌏 国外电商</a>
-  <a href="#s6">🤖 AI/人工智能</a>
-  <a href="#s7">🎬 AI视频/图片</a>
-  <a href="#s8">🏷️ 标签耗材/软件</a>
-  <a href="#s9">🆕 新奇特/新类目</a>
-  <a href="#s10">🏛️ 国家动态/政策</a>
+  <a href="#s6">🤖 AI+电商/运营/智能产品</a>
+  <a href="#s7">🏛️ 国家政策动态</a>
+  <a href="#s8">🔥 热梗/爆款/热搜</a>
 </div>
 
-<!-- ============ SECTION 1: 标签打印机/条码行业 ============ -->
-<div class="section cat-1" id="s1">
-  <div class="section-title">
-    <span class="icon">🏷️</span> 标签打印机 / 条码行业
-    <span class="count">3条</span>
-  </div>
-  <div class="card-grid">
-
-    <div class="card">
-      <span class="tag">行业报告</span>
-      <h3><a href="https://www.sohu.com/a/931325106_122449174" target="_blank">2025年全球条码标签打印机市场规模达171.92亿元，中国市场53.78亿元</a></h3>
-      <p>贝哲斯咨询数据显示，2025年全球条码标签打印机市场规模约171.92亿元人民币，中国市场约53.78亿元。行业持续增长，零售、物流、制造三大领域为主要驱动力。</p>
-      <div class="meta-row">
-        <span class="source">搜狐/贝哲斯</span>
-        <span class="time">5月-6月</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <span class="tag">国产软件</span>
-      <h3><a href="https://www.toutiao.com/article/7507148841699836467/" target="_blank">2025国产标签打印软件排名：启锐AiYin、敖维科技等上榜</a></h3>
-      <p>启锐AiYin专为零售业设计，支持跨境标签打印和双色标签打印；敖维科技旗下标签打印平台以技术创新和行业适配能力领先，覆盖全链条解决方案。</p>
-      <div class="meta-row">
-        <span class="source">今日头条</span>
-        <span class="time">5月22日</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <span class="tag">品牌动态</span>
-      <h3><a href="https://www.ctaiot.com/" target="_blank">驰腾（CHITENG）：软硬耗一体化品牌，累计服务超500万客户</a></h3>
-      <p>驰腾产品涵盖标签打印机、扫描枪、采集器和耗材，形成"硬件+软件+耗材"全链路方案，在行业内品牌影响力持续扩大。</p>
-      <div class="meta-row">
-        <span class="source">驰腾官网</span>
-        <span class="time">5月</span>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ============ SECTION 2: 热梗/爆款/热搜 ============ -->
-<div class="section cat-2" id="s2">
-  <div class="section-title">
-    <span class="icon">🔥</span> 最新热梗 / 爆款产品 / 热搜
-    <span class="count">11条热梗</span>
-  </div>
-
-  <div class="highlight-box">
-    <strong>核心趋势：</strong>2025年5月网络热梗以"抽象文学"和"自嘲文化"为主流，年轻人用幽默解构焦虑，"毛坯人生vs精装朋友圈""孔乙己的假两件"等反映就业/生活压力下的集体情绪表达。
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card">
-      <span class="tag">职场热梗</span>
-      <h3>我是黄皮小狗，我同意上四休三</h3>
-      <p>以"我是XX，我同意上四休三"为模板的玩梗视频爆火，反映年轻人对工作生活平衡的强烈渴望。多家企业官号跟风玩梗，借势营销破圈。</p>
-      <div class="meta-row"><span class="source">抖音/小红书</span><span class="time">5月热榜</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">生活自嘲</span>
-      <h3>毛坯人生 vs 精装朋友圈</h3>
-      <p>年轻人自嘲现实生活如毛坯房般粗陋，但在朋友圈精装展示理想化形象——"生活是一地鸡毛的，朋友圈必须是精装的"，精准击中社交媒体焦虑。</p>
-      <div class="meta-row"><span class="source">微博/小红书</span><span class="time">5月持续</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">求职热梗</span>
-      <h3>孔乙己的假两件</h3>
-      <p>专升本应届生自嘲：长衫=本科（撑场面），短袖=专科（兜底）。"长衫里面还有一件短袖"精准反映当下学历焦虑和就业困境。</p>
-      <div class="meta-row"><span class="source">微博/抖音</span><span class="time">5月热榜</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">消费梗</span>
-      <h3>被资本做局了</h3>
-      <p>将生活中的失败甩锅给"资本暗中操控"——外卖券忍不住买买买长胖了？"被资本做局了，做的饭局。"用虚空甩锅降低心理压力。</p>
-      <div class="meta-row"><span class="source">抖音/小红书</span><span class="time">5月</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">复古热潮</span>
-      <h3>撕拉片 — "纸片茅台"</h3>
-      <p>已停产的即时成像胶片技术在小红书和抖音收获破亿曝光量，单张300-400元被戏称为"纸片茅台"，明星+复古摄影潮流推动下成为新消费现象。</p>
-      <div class="meta-row"><span class="source">小红书/抖音</span><span class="time">5月破亿曝光</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">魔性翻唱</span>
-      <h3>XX酱比起XX我更喜欢你</h3>
-      <p>源自日本偶像组合单曲的对唱片段，魔性声线+夸张表情+洗脑旋律引发全网模仿和二创，成为品牌借势营销新模板。</p>
-      <div class="meta-row"><span class="source">TikTok/抖音</span><span class="time">5月</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">品牌营销</span>
-      <h3>多邻国"去世"整活营销</h3>
-      <p>多邻国IP小绿鸟通过制造"去世"话题在微博、抖音、小红书收获破亿关注。当代年轻人对硬广无感，但"抽象文学"营销十分奏效。</p>
-      <div class="meta-row"><span class="source">多平台</span><span class="time">5月破亿</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">正能量梗</span>
-      <h3>gogogo出发咯</h3>
-      <p>源自邓超《奔跑吧》主题曲，因网络主播与豆包AI互动再度引爆，传递积极向上的情绪，成为短视频高频BGM。</p>
-      <div class="meta-row"><span class="source">抖音</span><span class="time">5月</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">谐音梗</span>
-      <h3>喂我花生（为我发声）</h3>
-      <p>宠物视频中主人捉弄宠物时，弹幕刷"喂我花生"表达委屈情绪，成为评论区万能接梗句式。</p>
-      <div class="meta-row"><span class="source">抖音/B站</span><span class="time">5月</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">凡尔赛梗</span>
-      <h3>好写太好写了</h3>
-      <p>马頔综艺采访金句被考古翻红，衍生出"毕业论文好写太好写了，不用一年三天就行"等AI二创视频，以凡尔赛+嘴硬方式自嘲。</p>
-      <div class="meta-row"><span class="source">抖音/B站</span><span class="time">5月翻红</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">品牌破圈</span>
-      <h3>你可能不认识我，但一定……</h3>
-      <p>"歌红人不红"歌手带火的自我介绍模板，被品牌借用来提升知名度——"你可能不认识我，但一定用过我的产品"。</p>
-      <div class="meta-row"><span class="source">抖音</span><span class="time">5月</span></div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ============ SECTION 3: 度点科技同行 ============ -->
-<div class="section cat-3" id="s3">
-  <div class="section-title">
-    <span class="icon">🏢</span> 深圳市度点科技 — 同行及上下游
-    <span class="count">5条</span>
-  </div>
-  <div class="card-grid">
-
-    <div class="card">
-      <span class="tag">度点科技</span>
-      <h3><a href="https://aiqicha.baidu.com/company_detail_32470223067313" target="_blank">深圳市度点科技有限公司 — 电子商务条码服务商</a></h3>
-      <p>主营条码打印机、标签机、票据机、扫描枪、采集器、耗材纸、碳带等系列产品，自主品牌运营，覆盖电商渠道。</p>
-      <div class="meta-row"><span class="source">爱企查</span><span class="time">5月24日更新</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">竞争对手</span>
-      <h3><a href="https://www.jobui.com/company/11121970/competitor/" target="_blank">度点科技竞争对手一览</a></h3>
-      <p>职友集数据显示，度点科技主要竞争对手包括同赛道条码/标签硬件厂商及电商服务商，竞争格局以产品性价比和渠道覆盖为核心。</p>
-      <div class="meta-row"><span class="source">职友集</span><span class="time">持续更新</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">同行品牌</span>
-      <h3><a href="https://www.ctaiot.com/company" target="_blank">驰腾（CHITENG）— 软硬耗一体化品牌</a></h3>
-      <p>深圳宝安区企业，产品线包括标签打印机、扫描枪、采集器和耗材，与度点科技处于同一赛道，累计服务超500万客户。</p>
-      <div class="meta-row"><span class="source">驰腾官网</span><span class="time">5月</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">上下游</span>
-      <h3>标签打印软件市场：敖维科技、启锐AiYin等国产方案崛起</h3>
-      <p>国产标签打印软件竞争加剧，敖维科技以智慧标签自动识别与供应链解决方案领先，启锐AiYin专注零售跨境标签，与度点科技硬件业务形成上下游协同。</p>
-      <div class="meta-row"><span class="source">知乎/今日头条</span><span class="time">5月</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">行业上游</span>
-      <h3>碳带/不干胶耗材市场 — 1688、淘宝、京东多平台竞争</h3>
-      <p>条码打印碳带及不干胶标签耗材在1688、淘宝、京东等平台供给充足，价格竞争激烈。行业趋势向高品质、定制化、环保方向演进。</p>
-      <div class="meta-row"><span class="source">1688/京东</span><span class="time">5月</span></div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ============ SECTION 4: 国内电商 ============ -->
-<div class="section cat-4" id="s4">
-  <div class="section-title">
-    <span class="icon">🛒</span> 国内电商（拼多多/天猫/淘宝/1688/京东/抖音）
+<!-- ====== 板块1: 同行及上下游 ====== -->
+<div class="section" id="s1">
+  <div class="section-header">
+    <div class="icon" style="background:#eef2ff;">🏢</div>
+    <h2>同行及上下游企业</h2>
     <span class="count">7条</span>
   </div>
+  <div class="section-body">
 
-  <div class="highlight-box">
-    <strong>本周焦点：618大战全面打响！</strong>5月25日-31日是618年中大促的关键预热/品类轮动期。天猫京东拼多多抖音全面开战，各平台玩法大幅简化，AI购物助手首次大规模应用于大促。
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card">
-      <span class="tag">618大促</span>
-      <h3><a href="https://finance.sina.com.cn/tech/roll/2025-05-28/doc-ineycmqt9039914.shtml" target="_blank">2025年618时间表全览：5月13日开启，持续至6月20日</a></h3>
-      <p>淘宝京东618从5月13日20:00开始。5月25日"数码家电日"（京东以旧换新补贴加码），5月25日-31日处于品类轮动期。淘宝主打AI购物助手智能凑单，京东推出超级预售加码价保。</p>
-      <div class="meta-row"><span class="source">新浪科技</span><span class="time">5月28日</span></div>
+    <div class="item">
+      <span class="tag tag-competitor">行业报告</span>
+      <h4><a href="https://caifuhao.eastmoney.com/news/20260407135023698563680" target="_blank" rel="noopener">全球条码标签打印机市场深度解析：2025年212亿元→2032年274亿元</a></h4>
+      <p>QYResearch最新报告显示，2025年全球条码标签打印机市场规模已达212亿元，预计2032年攀升至274亿元，CAGR 3.8%。增长由数字化转型、供应链智能化升级及东南亚/拉美新兴市场物流需求驱动。中国2025年市场规模为53.78亿元。</p>
+      <div class="source">📅 5月29日 · 来源：<a href="https://caifuhao.eastmoney.com/news/20260407135023698563680" target="_blank" rel="noopener">东方财富/QYResearch</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">天猫</span>
-      <h3>天猫618：官方立减八五折起，最高立减50%</h3>
-      <p>玩法大幅简化，仅设"官方立减"单一玩法，设置最低价校验防控"先涨后降"。淘宝天猫与小红书达成战略合作，首次打通种草到购买全链路。</p>
-      <div class="meta-row"><span class="source">综合</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-competitor">竞品动态</span>
+      <h4><a href="https://www.hprt.com.cn/News/2573.html" target="_blank" rel="noopener">HPRT发布HD600/HD700/HD700 Plus三款桌面热敏条码打印机</a></h4>
+      <p>汉印（HPRT）在5月正式推出三款新品，覆盖紧凑桌面标签（HD600）、宽幅标签（HD700）和高端联网场景（HD700 Plus），强调203/300 dpi、最高150mm/s、以太网/Wi-Fi/蓝牙连接能力，面向电商仓储场景。</p>
+      <div class="source">📅 5月8日 · 来源：<a href="https://www.hprt.com.cn/News/2573.html" target="_blank" rel="noopener">HPRT官网</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">京东</span>
-      <h3>京东618：5月31日正式开启，京喜自营启动"厂货百补"</h3>
-      <p>京东超市公布618大促节奏，专门设置POP营销活动。京东京喜自营正式启动"厂货百补"计划。5月25日数码家电日以旧换新补贴加码。</p>
-      <div class="meta-row"><span class="source">网易/综合</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-competitor">竞品分析</span>
+      <h4><a href="https://www.docin.com/p-5004691467.html" target="_blank" rel="noopener">2026年中国斑马条码打印机行业市场现状调查及投资机会研判报告</a></h4>
+      <p>博研咨询发布，5月25日更新。斑马2025年中国物流快递行业销售额3.68亿元（占34.9%），制造业3.12亿元（29.6%），零售1.97亿元（18.7%）。前十大客户含京东物流、顺丰、华为供应链等，贡献营收53.7%。</p>
+      <div class="source">📅 5月25日 · 来源：<a href="https://www.docin.com/p-5004691467.html" target="_blank" rel="noopener">豆丁网/博研咨询</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">拼多多</span>
-      <h3>拼多多618：品牌旗舰店无需"全网最低价"，虚假发货赔付降至5%</h3>
-      <p>受邀品牌旗舰店仅需与店铺同款同价即可报名，广告商品获补贴倾斜。虚假发货赔付由订单实收金额25%降至5%。6月9日"万人团"每日10点、20点开团。</p>
-      <div class="meta-row"><span class="source">搜狐/综合</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-competitor">市场格局</span>
+      <h4><a href="https://baijiahao.baidu.com/s?id=1864415954258423732" target="_blank" rel="noopener">全球标签打印机市场规模51.23亿美元，移动标签打印机增长最快</a></h4>
+      <p>百谏方略（DIResearch）5月6日发布：2025年全球标签打印机市场51.23亿美元，预计2033年达73.27亿美元，CAGR 4.95%。北美最大市场（38.53%），中国增速高于全球平均。</p>
+      <div class="source">📅 5月6日 · 来源：<a href="https://baijiahao.baidu.com/s?id=1864415954258423732" target="_blank" rel="noopener">百家号/百谏方略</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">抖音电商</span>
-      <h3>抖音商城618好物节：流量补贴驱动全域爆发</h3>
-      <p>抖音618招商大会5月8日召开，好物节5月13日开启。以流量补贴为核心策略，推动全域爆发，重点扶持品牌自播和达人带货。</p>
-      <div class="meta-row"><span class="source">搜狐</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-competitor">上下游</span>
+      <h4><a href="https://news.yesky.com/hotnews/471/348971.shtml" target="_blank" rel="noopener">2026年标签打印软件行业盘点：四大趋势——云端+多端+AI+工业集成</a></h4>
+      <p>天极网4月27日发布Q1盘点：标签打印软件赛道四大核心趋势并行——云端部署、多端数据同步、AI辅助设计、工业级系统集成。国产"易打标"等正在快速追赶BarTender和NiceLabel。</p>
+      <div class="source">📅 4月27日 · 来源：<a href="https://news.yesky.com/hotnews/471/348971.shtml" target="_blank" rel="noopener">天极网</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">1688</span>
-      <h3>1688拿货节升级为S+级大促，"一年四促"常态化</h3>
-      <p>5月拿货节首次升级为S+级大促，预热期仅6天（史上最短）。赛马策略：工业品建议冲100积分档，标志阿里或开启"一年四促"常态化节奏。</p>
-      <div class="meta-row"><span class="source">抖音/搜狐</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-competitor">软件选型</span>
+      <h4><a href="https://blog.csdn.net/m0_74042121/article/details/158499639" target="_blank" rel="noopener">国产+进口全覆盖：2026企业标签打印软件选型攻略（DLabel与BarTender同台对比）</a></h4>
+      <p>CSDN发布2026年6款主流企业标签打印软件选型攻略，涵盖进口BarTender、NiceLabel与国产DLabel、精臣云打印、码尚云及BYLabel，从功能适配、部署成本、兼容性、合规性等维度全面对比。</p>
+      <div class="source">📅 近期 · 来源：<a href="https://blog.csdn.net/m0_74042121/article/details/158499639" target="_blank" rel="noopener">CSDN</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">行业趋势</span>
-      <h3>淘宝闪购全量上线48小时：饿了么13城物流订单破峰</h3>
-      <p>淘宝闪购全量上线后48小时内，南宁、贵阳、中山等13座城市单日物流订单突破历史峰值，即时零售赛道加速升温。</p>
-      <div class="meta-row"><span class="source">网易</span><span class="time">5月初</span></div>
+    <div class="item">
+      <span class="tag tag-competitor">碳带耗材</span>
+      <h4><a href="https://www.pinsowang.com/mobile/infonews/show.php?itemid=771913" target="_blank" rel="noopener">条码打印机及耗材厂家推荐：涵盖不干胶、热敏、色带碳带全品类</a></h4>
+      <p>5月3日B2B平台发布条码打印机、扫描器、数据采集器、RFID设备及BarTender软件和不干胶标签纸、碳带等耗材厂家推荐，反映下游耗材市场竞争加剧。</p>
+      <div class="source">📅 5月3日 · 来源：<a href="https://www.pinsowang.com/mobile/infonews/show.php?itemid=771913" target="_blank" rel="noopener">品搜网</a></div>
     </div>
 
   </div>
 </div>
 
-<!-- ============ SECTION 5: 国外电商 ============ -->
-<div class="section cat-5" id="s5">
-  <div class="section-title">
-    <span class="icon">🌏</span> 国外电商（虾皮/亚马逊）
-    <span class="count">5条</span>
+<!-- ====== 板块2: 标签/条码/耗材/软件 ====== -->
+<div class="section" id="s2">
+  <div class="section-header">
+    <div class="icon" style="background:#f0fdf4;">🏷️</div>
+    <h2>标签打印机 · 条码行业 · 耗材 · 匹配软件</h2>
+    <span class="count">8条</span>
   </div>
-  <div class="card-grid">
+  <div class="section-body">
 
-    <div class="card">
-      <span class="tag">亚马逊</span>
-      <h3><a href="https://www.amz123.com/t/iagTjpld" target="_blank">亚马逊5月新规：英国仓发货、泛欧计划、视频验证、带电产品管理全面更新</a></h3>
-      <p>5月亚马逊平台规则多项重要更新：英国仓发货政策调整、泛欧计划规则变更、卖家视频验证要求升级、带电产品管理新规。中国卖家需重点关注合规应对。</p>
-      <div class="meta-row"><span class="source">AMZ123</span><span class="time">5月7日发布，5月实施</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">驰腾机会</span>
+      <h4><a href="https://m.book118.com/html/2026/0528/8076135071010075.shtm" target="_blank" rel="noopener">2026及未来5年中国智能型条码标签打印机行业发展研究报告</a></h4>
+      <p>5月28日发布。2025年中国智能型条码标签打印机市场186.4亿元，预计2026年228.5亿元。头部企业如斑马与汉印凭借"硬件+软件+服务"生态闭环占据主要份额，"软硬耗一体化"成为行业标配——与驰腾战略方向高度契合。</p>
+      <div class="source">📅 5月28日 · 来源：<a href="https://m.book118.com/html/2026/0528/8076135071010075.shtm" target="_blank" rel="noopener">book118</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">亚马逊</span>
-      <h3>亚马逊Prime Day时间调整 + AI搜索升级 + 税务数据共享</h3>
-      <p>亚马逊从流量规则、运营逻辑到合规监管多层面升级：Prime Day时间调整、AI搜索功能升级、欧洲VAT核查收紧、美国产品合规要求趋严。</p>
-      <div class="meta-row"><span class="source">跨境知道</span><span class="time">5月-6月</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">Dlabel利好</span>
+      <h4><a href="https://app.mi.com/details?id=com.example.dudian.dudian" target="_blank" rel="noopener">Dlabel云标签APP 5月11日更新：云存储+自动同步+扫码建模+智能识别</a></h4>
+      <p>小米应用商店显示Dlabel云标签2026年5月11日更新，已支持云存储、自动同步、扫码建模、智能识别等功能，处于行业"云端+AI"趋势前沿。</p>
+      <div class="source">📅 5月11日 · 来源：<a href="https://app.mi.com/details?id=com.example.dudian.dudian" target="_blank" rel="noopener">小米应用商店</a> | <a href="https://sj.qq.com/appdetail/com.example.dudian.dudian" target="_blank" rel="noopener">应用宝</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">亚马逊</span>
-      <h3>亚马逊2025年5月规则全面解读：中国卖家应对指南</h3>
-      <p>涵盖英国仓发货新政、泛欧计划调整、视频验证流程、带电产品合规管理等四大板块，中国跨境卖家需在物流、税务、认证方面全面升级合规能力。</p>
-      <div class="meta-row"><span class="source">知乎/IngStart</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-insight">行业趋势</span>
+      <h4><a href="http://hsprinter.com/info/news/the-barcode-printer-market-in-2026-trends-growth-and-future-directions/" target="_blank" rel="noopener">2026条码打印机市场五大趋势：直热式增长、无底纸标签、POS集成、KIOSK兼容、全生命周期价值</a></h4>
+      <p>HSPRINTER 3月25日发布行业洞察：条码打印机采购从"买设备"转向"全生命周期价值评估"，热敏/热转印双模式、无底纸环保标签、与POS/KIOSK深度集成成为关键采购标准。</p>
+      <div class="source">📅 3月25日 · 来源：<a href="http://hsprinter.com/info/news/the-barcode-printer-market-in-2026-trends-growth-and-future-directions/" target="_blank" rel="noopener">HSPRINTER</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">Shopee虾皮</span>
-      <h3>Shopee 2025年持续收紧：佣金最高涨至12% + 强制代扣8%销售税</h3>
-      <p>东南亚电商巨头Shopee佣金最高涨至12%，强制代扣8%销售税，卖家利润空间遭双重挤压。多站点规则持续更新，合规要求全面提升。</p>
-      <div class="meta-row"><span class="source">知乎</span><span class="time">5月持续</span></div>
+    <div class="item">
+      <span class="tag tag-insight">市场规模</span>
+      <h4><a href="https://www.sohu.com/a/985297757_122449107" target="_blank" rel="noopener">中国条码打印机市场132.32亿元，全球373.04亿元</a></h4>
+      <p>2月9日搜狐发布报告：2025年中国条码打印机市场132.32亿元，全球373.04亿元，预计2032年全球将达780.47亿元，预测期CAGR强劲。</p>
+      <div class="source">📅 2月9日 · 来源：<a href="https://www.sohu.com/a/985297757_122449107" target="_blank" rel="noopener">搜狐</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">跨境趋势</span>
-      <h3><a href="https://www.toutiao.com/article/7511675334887047730/" target="_blank">2025年全球十大跨境电商平台排名：亚马逊第一，Shopee东南亚称王</a></h3>
-      <p>基于GMV、月访问量、区域影响力综合评估：亚马逊以38.7%市场份额稳居第一；Shopee在东南亚及拉美市场持续领先；TikTok Shop、Temu快速崛起。</p>
-      <div class="meta-row"><span class="source">今日头条</span><span class="time">6月3日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">移动化趋势</span>
+      <h4><a href="https://www.docin.com/p-4994630018.html" target="_blank" rel="noopener">中国移动条码标签打印机行业市场规模及竞争格局分析报告</a></h4>
+      <p>5月13日豆丁网发布。聚焦便携式/轻量化热敏/热转印输出设备，2025年中国移动条码标签打印机市场42.3亿元（同比+12.7%），移动端增速显著高于桌面和工业端。</p>
+      <div class="source">📅 5月13日 · 来源：<a href="https://www.docin.com/p-4994630018.html" target="_blank" rel="noopener">豆丁网</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-opportunity">驰腾机会</span>
+      <h4><a href="https://www.gminsights.com/industry-analysis/barcode-printers-market-size" target="_blank" rel="noopener">条码打印机市场CAGR 5.8%：在线零售+物流驱动增长（GMInsights）</a></h4>
+      <p>GMInsights数据显示，2025年条码打印机市场规模超45.6亿美元，2026-2035年CAGR为5.8%。主要驱动力：在线零售快速增长、物流和履行中心对标签/运输/库存跟踪需求不断增长——与驰腾产品线高度匹配。</p>
+      <div class="source">📅 近期 · 来源：<a href="https://www.gminsights.com/industry-analysis/barcode-printers-market-size" target="_blank" rel="noopener">GMInsights</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">行业报告</span>
+      <h4><a href="https://m.book118.com/html/2026/0515/5110243100013213.shtm" target="_blank" rel="noopener">2026年中国条码打印机行业市场规模及投资前景预测分析报告</a></h4>
+      <p>5月19日book118发布，涵盖国内重点生产企业分析、市场发展趋势及策略建议、投资机会与风险分析，为行业提供全景式参考。</p>
+      <div class="source">📅 5月19日 · 来源：<a href="https://m.book118.com/html/2026/0515/5110243100013213.shtm" target="_blank" rel="noopener">book118</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-opportunity">驰腾机会</span>
+      <h4><a href="https://dlabel.ctaiot.com/partner_reg/download.html" target="_blank" rel="noopener">驰腾官网：软硬耗一体化品牌定位进一步强化</a></h4>
+      <p>驰腾（CHITENG）官网强调"为用户提供更简单的标签智能管理支持"，Dlabel软件支持安卓/iOS/PC三端同步。软硬耗一体化品牌定位与行业"全生命周期价值"趋势高度一致。</p>
+      <div class="source">📅 近期 · 来源：<a href="https://dlabel.ctaiot.com/partner_reg/download.html" target="_blank" rel="noopener">ctaiot.com</a> | <a href="https://dlabel.cn/s/index.html" target="_blank" rel="noopener">Dlabel官网</a></div>
     </div>
 
   </div>
 </div>
 
-<!-- ============ SECTION 6: AI/人工智能 ============ -->
-<div class="section cat-6" id="s6">
-  <div class="section-title">
-    <span class="icon">🤖</span> AI / 人工智能
+<!-- ====== 板块3: 新奇特/新类目 ====== -->
+<div class="section" id="s3">
+  <div class="section-header">
+    <div class="icon" style="background:#fef3c7;">🆕</div>
+    <h2>新奇特产品 · 新类目 · 创新趋势</h2>
+    <span class="count">6条</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item">
+      <span class="tag tag-insight">消费趋势</span>
+      <h4><a href="https://zh.accio.com" target="_blank" rel="noopener">2026新奇特爆款单品趋势：智能玩具、创意摆件、便携投影仪领跑</a></h4>
+      <p>Accio平台5月21日发布2026年新奇特爆款商品推荐，智能互动玩具、创意家居摆件、便携投影仪三大品类热度最高，消费者对"小而美"智能硬件接受度持续提升。</p>
+      <div class="source">📅 5月21日 · 来源：<a href="https://zh.accio.com" target="_blank" rel="noopener">Accio</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">爆款选品</span>
+      <h4><a href="https://www.zhixingshuke.com" target="_blank" rel="noopener">2026年热门商品销售趋势：4步筛出爆款方法论</a></h4>
+      <p>知行奇点5月3日发布选品指南，提出"需求频次、演示能力、复购空间、跨平台适配"四步筛选法。高复购、可视频演示、适合多平台分发的细分商品成为2026年爆款核心特征。</p>
+      <div class="source">📅 5月3日 · 来源：知行奇点</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">AI硬件爆发</span>
+      <h4><a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">618首轮战报：AI硬件成最大黑马，AI眼镜同比增9倍</a></h4>
+      <p>科创板日报6月2日报道：天猫618首轮数据，AI智能硬件整体销售额同比上涨80%，其中AI眼镜单品成交同比飙升9倍。京东AIPC、AI眼镜、大屏AI手机、智能学习机成交额同比增幅200%。</p>
+      <div class="source">📅 6月2日 · 来源：<a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">科创板日报/腾讯新闻</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-opportunity">驰腾机会</span>
+      <h4>拼多多2026热门类目：垂耳兔用品、地域美食、母婴刚需品毛利高达50%</h4>
+      <p>拼多多2026年三大高潜力类目中，母婴刚需品与标签打印机（婴儿用品标记、奶粉分装标签等）存在天然关联，值得关注交叉销售场景。</p>
+      <div class="source">📅 3月23日 · 来源：百家号</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">科技新品</span>
+      <h4><a href="https://post.smzdm.com/p/azoweqxp/" target="_blank" rel="noopener">2026年5月科技好物盘点：8款新品覆盖手机、穿戴、影音、智能家居</a></h4>
+      <p>什么值得买盘点5月最值得关注的8款科技新品，从8000mAh大电池手机到AI全感穿戴设备、激光影院投影，消费者对"质价比"和"AI功能"双重需求成为选品核心。</p>
+      <div class="source">📅 5月 · 来源：<a href="https://post.smzdm.com/p/azoweqxp/" target="_blank" rel="noopener">什么值得买</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">跨境电商选品</span>
+      <h4>亚马逊新奇特爆款十件商品：创意家居、便携工具、智能小电领跑</h4>
+      <p>Accio平台3月发布亚马逊新奇特爆款TOP10，创意家居用品、便携式工具、智能小电器占据主导，反映海外消费者对"实用+创新"产品的偏好。</p>
+      <div class="source">📅 3月20日 · 来源：Accio</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ====== 板块4: 国内电商 ====== -->
+<div class="section" id="s4">
+  <div class="section-header">
+    <div class="icon" style="background:#fce7f3;">🛒</div>
+    <h2>国内电商（拼多多 · 天猫 · 淘宝 · 1688 · 京东 · 抖音）</h2>
     <span class="count">10条</span>
   </div>
+  <div class="section-body">
 
-  <div class="highlight-box">
-    <strong>本周最大看点：</strong>DeepSeek R1-0528发布（推理能力显著提升）、谷歌Veo 3发布（音画同步AI视频）、华为提出"韬定律"（半导体新指导原则）、日本通过首部AI法律。中国开源力量获英伟达CEO黄仁勋公开称赞。
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card">
-      <span class="tag">大模型</span>
-      <h3><a href="https://news.cctv.com/2025/06/02/ARTIDKcaYRcAegYIYiFirJvD250602.shtml" target="_blank">DeepSeek R1-0528发布：推理能力大幅提升，接近GPT-4o水平</a></h3>
-      <p>5月28日，DeepSeek完成R1小版本升级至R1-0528。数学、编程、逻辑推理国内领先，针对长篇写作（议论文/小说/散文）大幅优化，输出更长更完整。英伟达CEO黄仁勋公开称赞。</p>
-      <div class="meta-row"><span class="source">央视/新华网</span><span class="time">5月28日</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">618战报</span>
+      <h4><a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">⭐ 2026年618首轮战报：AI全面渗透，竞争从价格战转向效率战</a></h4>
+      <p>科创板日报6月2日综合报道。京东5月30日晚8点开启，截至6月2日三大平台首轮战报出炉：天猫超40000个品牌成交翻倍、破亿品牌数同比增长40%；京东新商家数量同比增长62%、51个新商家破千万；抖音消费券带动破亿商家同比增长325%。今年被业内认为是首个"AI原生"电商大促。</p>
+      <div class="source">📅 6月2日 · 来源：<a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">科创板日报</a> | <a href="http://finance.sina.com.cn/roll/2026-06-01/doc-inhzxewi5106894.shtml" target="_blank" rel="noopener">新浪财经</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">大模型</span>
-      <h3>Anthropic发布Claude 4系列：Opus 4定位编程最强模型</h3>
-      <p>Claude Opus 4定位行业领先编程模型，擅长复杂长任务；Sonnet 4显著升级指令理解、推理与编程表现。多模态能力进一步增强。</p>
-      <div class="meta-row"><span class="source">央视/新华网</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">天猫</span>
+      <h4><a href="http://baijiahao.baidu.com/s?id=1866744035461851378" target="_blank" rel="noopener">天猫618第一阶段：40000+品牌翻倍，破亿品牌同比增40%</a></h4>
+      <p>亿元体量且保持双位数增长的直播间同比增幅达50%。首次参与天猫618的新品牌中，千万级成交品牌数量同比增长67%，329个新锐品牌成为细分赛道冠军。</p>
+      <div class="source">📅 6月2日 · 来源：<a href="http://baijiahao.baidu.com/s?id=1866744035461851378" target="_blank" rel="noopener">第一财经/百家号</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">大模型</span>
-      <h3>Google发布Gemini 2.5系列 + Imagen 4 + Veo 3多模态矩阵</h3>
-      <p>谷歌在5月I/O大会发布Gemini 2.5系列模型，性能与智能推理大幅提升。同步发布图像生成Imagen 4、视频生成Veo 3、音乐生成Lyria 2、AI电影工具Flow。</p>
-      <div class="meta-row"><span class="source">央视/新华网</span><span class="time">5月21日I/O</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">京东</span>
+      <h4><a href="https://i.ifeng.com/c/8tZBe0TuXeX" target="_blank" rel="noopener">京东618开门红：iPhone 1分钟破亿，华为手机10分钟增超5倍</a></h4>
+      <p>凤凰网科技5月31日报道：开门红4小时，iPhone成交额1分钟破亿；华为手机10分钟成交额同比增长超5倍；京补合约4小时成交量同比增长超4倍；手机以旧换新用户量同比增长近100%。</p>
+      <div class="source">📅 5月31日 · 来源：<a href="https://i.ifeng.com/c/8tZBe0TuXeX" target="_blank" rel="noopener">凤凰网科技</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">中国开源</span>
-      <h3>阿里巴巴开源WebAgent：端到端信息检索与多步推理智能体</h3>
-      <p>阿里云开源自主AI智能体WebAgent，模拟人类感知、决策和行动。阿里云已服务超73万企业和开发者，开发30万个智能体。</p>
-      <div class="meta-row"><span class="source">CSDN综合</span><span class="time">5月下旬</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">抖音</span>
+      <h4>抖音618第一阶段：消费券带动破亿商家增325%，达人带货增5倍</h4>
+      <p>5月15日至20日，抖音百亿消费券补贴带动成交额破亿元商家数同比增长325%，成交额破亿元爆款单品数同比增长300%，超15万达人带货成交额同比增长5倍。</p>
+      <div class="source">📅 5月21日 · 来源：网经社</div>
     </div>
 
-    <div class="card">
-      <span class="tag">中国开源</span>
-      <h3>腾讯开源HunyuanVideo-Avatar语音数字人模型</h3>
-      <p>仅需一张图片+音频即可生成自然真实的数字人视频，应用于短视频、电商广告等场景。腾讯同时披露"混元-O"全模态模型规划，迈向世界模型与具身智能。</p>
-      <div class="meta-row"><span class="source">CSDN综合</span><span class="time">5月下旬</span></div>
+    <div class="item">
+      <span class="tag tag-insight">行业趋势</span>
+      <h4><a href="http://finance.sina.com.cn/roll/2026-06-01/doc-inhzxewi5106894.shtml" target="_blank" rel="noopener">618竞争逻辑转变：从"全网最低价"到"质价比+商家利润健康度"</a></h4>
+      <p>新浪财经6月1日报道：今年电商行业在价格上不再单纯比拼全网最低价，更强调质价比和商家利润健康度。玩法全面简化——官方立减取代复杂红包游戏。商家"弃流量保利润"成为集体转向。</p>
+      <div class="source">📅 6月1日 · 来源：<a href="http://finance.sina.com.cn/roll/2026-06-01/doc-inhzxewi5106894.shtml" target="_blank" rel="noopener">新浪财经</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">AI终端</span>
-      <h3>2025全球人工智能终端展（深圳）：华为、荣耀、中兴展示AI手机/PC/家居</h3>
-      <p>深圳举办全球AI终端展，中兴通讯发布多款AI终端产品，构建"AI for All"全场景智慧生态。声智科技发布支持66种语言毫秒级翻译的AI耳机。</p>
-      <div class="meta-row"><span class="source">CSDN综合</span><span class="time">5月下旬</span></div>
+    <div class="item">
+      <span class="tag tag-insight">AI渗透</span>
+      <h4><a href="https://finance.sina.com.cn/wm/2026-05-18/doc-inhyivuf7956418.shtml" target="_blank" rel="noopener">AI全链路渗透618：京东数字人带货破7000万，AI客服服务超百万商家</a></h4>
+      <p>新浪财经5月18日报道京东618启动发布会：京东数字人JoyStreamer开播商家同比增长6倍、带货成交额突破7000万元，AI客服"京小智"服务超百万商家、大模型服务量同比增长14倍。天猫将通义千问集成到淘宝。</p>
+      <div class="source">📅 5月18日 · 来源：<a href="https://finance.sina.com.cn/wm/2026-05-18/doc-inhyivuf7956418.shtml" target="_blank" rel="noopener">新浪财经</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">AI安全</span>
-      <h3>DeepSeek发布AI内容检测工具：基于宪法AI技术</h3>
-      <p>支持虚假信息过滤与版权保护。C3安全大会同期召开，亚信安全发布AI XDR联动防御系统。上海交大发布《2025"人工智能+"行业发展蓝皮书》。</p>
-      <div class="meta-row"><span class="source">CSDN综合</span><span class="time">5月下旬</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">跨境增量</span>
+      <h4><a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">海外618成最大增量变量：京东全球售订单翻倍，速卖通组建百人海外直播团</a></h4>
+      <p>科创板日报6月2日报道：速卖通专项组建超百人海外网红直播团队，覆盖全球14个重点国家。国货出海从代理贴牌升级为品牌直营+本地化营销。</p>
+      <div class="source">📅 6月2日 · 来源：<a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">科创板日报</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">企业战略</span>
-      <h3>小米将"创新业务分部"更名为"智能电动汽车及AI分部"</h3>
-      <p>小米明确AI战略权重提升。腾讯拥抱DeepSeek等开源模型，"自研+开源"双线并进。百度、字节跳动持续加大AI人才招聘。</p>
-      <div class="meta-row"><span class="source">CSDN综合</span><span class="time">5月下旬</span></div>
+    <div class="item">
+      <span class="tag tag-insight">平台动态</span>
+      <h4>阿里巴巴全年收入首破1万亿元，AI商业化拐点已至</h4>
+      <p>阿里财报显示全年收入首破1万亿元，AI相关产品年化收入破358亿元。吴泳铭称"AI商业化拐点已至"，资本支出将远超3800亿元。千问与淘宝全面打通。</p>
+      <div class="source">📅 5月 · 来源：网经社AI月报</div>
     </div>
 
-    <div class="card">
-      <span class="tag">AI研究</span>
-      <h3>中科院提出AutoThink策略：让大模型自主决定"要不要思考"</h3>
-      <p>中科院自动化所与鹏城实验室提出高效推理策略AutoThink，可让大模型自主决定是否思考及思考多少，避免过度思考，实现准确率与效率的平衡。</p>
-      <div class="meta-row"><span class="source">央视</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-insight">直播电商</span>
+      <h4>首档AI购物直播晚会：京东赛博联欢会全网曝光超3亿</h4>
+      <p>京东推出首档AI购物直播晚会《京东618·赛博联欢会》，全网曝光量超过3亿，直接带动品牌销售同比增长超3倍，开创"AI+直播+电商"新形态。</p>
+      <div class="source">📅 6月2日 · 来源：百家号</div>
     </div>
 
-    <div class="card">
-      <span class="tag">AI治理</span>
-      <h3>日本通过首部AI法律 + 中新联合研讨会 + 上合组织AI合作论坛</h3>
-      <p>5月28日日本参议院通过首部专门针对AI的法律。5月29日天津召开"2025中国—上合组织AI合作论坛"，发布合作中心建设方案。中新联合研讨会探讨生成式AI治理。</p>
-      <div class="meta-row"><span class="source">央视/新华网</span><span class="time">5月28-29日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">B2B</span>
+      <h4>六部门发文支持电商：推进跨境电商、拓展丝路电商、加快制度型开放</h4>
+      <p>商务部等六部门印发《关于更好服务实体经济 推进电子商务高质量发展的指导意见》，提出5方面16条举措，重点推进跨境电商、拓展"丝路电商"、加快制度型开放。</p>
+      <div class="source">📅 5月 · 来源：搜狐外贸新规汇总</div>
     </div>
 
   </div>
 </div>
 
-<!-- ============ SECTION 7: AI视频/图片 ============ -->
-<div class="section cat-7" id="s7">
-  <div class="section-title">
-    <span class="icon">🎬</span> AI 视频 / 图片生成
-    <span class="count">5条</span>
+<!-- ====== 板块5: 国外电商 ====== -->
+<div class="section" id="s5">
+  <div class="section-header">
+    <div class="icon" style="background:#e0f2fe;">🌏</div>
+    <h2>国外电商（虾皮 · 亚马逊）</h2>
+    <span class="count">8条</span>
   </div>
-  <div class="card-grid">
+  <div class="section-body">
 
-    <div class="card">
-      <span class="tag">重磅发布</span>
-      <h3>Google发布Veo 3：首款支持音画同步生成的AI视频工具</h3>
-      <p>5月21日Google I/O大会上发布Veo 3，作为首款支持音画同步生成的AI视频工具，从文本等多种输入生成高质量视频。7月在Vertex AI上线。</p>
-      <div class="meta-row"><span class="source">搜狐/Google</span><span class="time">5月21日</span></div>
+    <div class="item">
+      <span class="tag tag-alert">亚马逊政策</span>
+      <h4><a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">亚马逊FBA超龄库存清理门槛从365天缩短至270天</a></h4>
+      <p>跨境知道5月19日报道：5月6日（欧洲站）和5月14日（美加站）为清理截止日期，逾期未处理平台自动弃置或退运。同时移除/弃置费用计费方式从"整单结算"改为"按单件逐笔计费"。</p>
+      <div class="source">📅 5月19日 · 来源：<a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">跨境知道</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">图像生成</span>
-      <h3>Google Imagen 4发布：多模态高质量图像生成</h3>
-      <p>与Veo 3同步发布，支持从文本等多种输入形式生成高质量视觉内容，与Veo 3、Lyria 2（音乐）、Flow（AI电影）构成完整创作矩阵。</p>
-      <div class="meta-row"><span class="source">央视/新华网</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-alert">亚马逊售后</span>
+      <h4><a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">亚马逊售后考核全面升级：24小时回复率≥90%、不满意率≤25%</a></h4>
+      <p>跨境知道5月19日报道：5月起至少90%的买家消息须在24小时内回复（含周末节假日），超过25%的回复被标记为"问题未解决"直接影响店铺评分和流量。后台"联系买家"按钮全面禁用。</p>
+      <div class="source">📅 5月19日 · 来源：<a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">跨境知道</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">中国方案</span>
-      <h3>腾讯HunyuanVideo-Avatar：一张图+音频=数字人视频</h3>
-      <p>腾讯开源语音数字人模型，仅需一张图片和音频即可生成自然真实的数字人视频，重点应用于短视频和电商广告场景。</p>
-      <div class="meta-row"><span class="source">CSDN综合</span><span class="time">5月下旬</span></div>
+    <div class="item">
+      <span class="tag tag-alert">亚马逊定价</span>
+      <h4><a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">亚马逊定价规则收紧：长期挂优惠券的卖家Deal提报门槛飙升</a></h4>
+      <p>跨境知道5月19日报道：5月18日起生效，若商品过去90天内促销价低于非促销中位价的天数超过45天，系统将重新定义更低的常规价，直接影响Deal活动提报资格。</p>
+      <div class="source">📅 5月19日 · 来源：<a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">跨境知道</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">行业全景</span>
-      <h3><a href="https://zhuanlan.zhihu.com/p/1918467168288375159" target="_blank">2025年AI视频生成工具全景评测：5大类23款主流工具</a></h3>
-      <p>从文字描述生成动态场景到静态图片转视频，再到3D数字人自然播报，各类AI视频工具在2025年全面进入实用阶段。覆盖国内外主流方案。</p>
-      <div class="meta-row"><span class="source">知乎</span><span class="time">6月18日</span></div>
+    <div class="item">
+      <span class="tag tag-alert">Shopee费率</span>
+      <h4><a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">Shopee多站点佣金齐涨：泰国商城店铺佣金调至24.61%</a></h4>
+      <p>跨境知道5月19日报道：菲律宾站Shopee与Lazada相继上调佣金费率，泰国站商城店铺佣金调至24.61%，叠加技术支持费+活动服务费+佣金调整，卖家现金流压力显著增大。</p>
+      <div class="source">📅 5月19日 · 来源：<a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">跨境知道</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">竞争格局</span>
-      <h3>海外国内AI视频/图像大厂竞争白热化：Google、Adobe、OpenAI、字节跳动</h3>
-      <p>海外及国内AI大厂在闭源模型竞争日趋激烈，加速渗透广告、影视制作等大型商业化市场。开源模型更多聚焦中小企业和个人创作者。</p>
-      <div class="meta-row"><span class="source">报告精读</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-alert">Shopee履约</span>
+      <h4><a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">Shopee揽收政策调整：跨境直发时效考核趋严，本土仓成硬门槛</a></h4>
+      <p>跨境知道5月19日报道：5月18日起跨境直发时效考核收紧，本土仓备货成为履约硬门槛。铺货型卖家首当其冲，品牌卖家和精细化运营卖家迎来结构性竞争优势。</p>
+      <div class="source">📅 5月19日 · 来源：<a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">跨境知道</a></div>
     </div>
 
-  </div>
-</div>
-
-<!-- ============ SECTION 8: 标签耗材/软件 ============ -->
-<div class="section cat-8" id="s8">
-  <div class="section-title">
-    <span class="icon">🏷️</span> 标签打印机耗材 / 匹配软件
-    <span class="count">4条</span>
-  </div>
-  <div class="card-grid">
-
-    <div class="card">
-      <span class="tag">软件方案</span>
-      <h3>2025年国产条码标签打印软件综合推荐：敖维科技领跑</h3>
-      <p>敖维科技旗下标签打印平台以智慧标签自动识别与供应链解决方案领先行业，支持多行业适配。启锐AiYin专为零售跨境标签设计，支持双色打印。</p>
-      <div class="meta-row"><span class="source">知乎/今日头条</span><span class="time">5月-6月</span></div>
+    <div class="item">
+      <span class="tag tag-alert">TikTok Shop</span>
+      <h4><a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">TikTok Shop泰国佣金上调至6.96%-8.03%，美国站履约压缩至48小时</a></h4>
+      <p>跨境知道5月19日报道：5月6日起泰国站电子类涨至6.96%、非电子类涨至8.03%。美国站履约时效从72小时压缩至48小时，强制本土仓发货。内容合规全面收紧，虚假宣传最长冻结90天佣金。</p>
+      <div class="source">📅 5月19日 · 来源：<a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">跨境知道</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">耗材市场</span>
-      <h3>条码碳带/不干胶标签市场：1688超8000家供应商，价格竞争白热化</h3>
-      <p>1688平台条码打印碳带供应商超8347家，淘宝京东多渠道覆盖。行业趋势向高品质定制化、环保材料方向发展。耗材与打印机匹配兼容性是用户核心痛点。</p>
-      <div class="meta-row"><span class="source">1688/京东</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-alert">Temu</span>
+      <h4><a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">Temu告别"0佣金"：全托管收取5%-11%佣金，负佣金机制挤压低价品</a></h4>
+      <p>跨境知道5月19日报道：全托管按商品售价扣除运费后收取5%-11%佣金，若结算价扣除运费成本后出现负数，卖家不仅无法获得货款还需倒贴5%差价。</p>
+      <div class="source">📅 5月19日 · 来源：<a href="https://www.ikjzd.com/articles/1810625995697312656" target="_blank" rel="noopener">跨境知道</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">行业数据</span>
-      <h3><a href="https://wenku.baidu.com/view/933f4c84de38376baf1ffc4ffe4733687e21fcf9.html" target="_blank">2025年中国条形码标签打印软件市场全景分析：全球规模约185亿美元</a></h3>
-      <p>2024年全球条形码标签打印软件市场规模约185亿美元，中国市场占比持续提升。行业受电商物流、智能制造、智慧零售三轮驱动。</p>
-      <div class="meta-row"><span class="source">百度文库</span><span class="time">2025年报告</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">技术趋势</span>
-      <h3>标签打印软件技术趋势：云端化、移动化、AI辅助设计</h3>
-      <p>新一代标签打印软件趋向SaaS云端部署、移动端操作、AI模板推荐和自动排版。与ERP/WMS系统深度集成成为企业级客户核心需求。</p>
-      <div class="meta-row"><span class="source">综合</span><span class="time">5月</span></div>
+    <div class="item">
+      <span class="tag tag-insight">行业判断</span>
+      <h4><a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_3316a0136b553352" target="_blank" rel="noopener">T86免税终结！跨境电商2026迎合规生死战</a></h4>
+      <p>腾讯新闻5月报道：美国正式终结"800美元小额包裹关税豁免政策"，所有来自中国的小额包裹须合规申报并缴纳关税。AI工具（7×24实时响应）+人工客服兜底成为标配。</p>
+      <div class="source">📅 5月 · 来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_3316a0136b553352" target="_blank" rel="noopener">腾讯新闻</a></div>
     </div>
 
   </div>
 </div>
 
-<!-- ============ SECTION 9: 新奇特/新类目 ============ -->
-<div class="section cat-9" id="s9">
-  <div class="section-title">
-    <span class="icon">🆕</span> 新奇特产品 / 新出类目
-    <span class="count">4条</span>
-  </div>
-  <div class="card-grid">
-
-    <div class="card">
-      <span class="tag">AI硬件</span>
-      <h3>声智科技AI翻译耳机：66种语言毫秒级翻译+情绪识别</h3>
-      <p>西博会上发布的AI耳机，支持66种语言毫秒级翻译，结合情绪识别功能，成为跨境商务和旅行场景的新奇特爆款潜力产品。</p>
-      <div class="meta-row"><span class="source">CSDN综合</span><span class="time">5月下旬</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">AI家居</span>
-      <h3>九牧AI卫浴：搭载DeepSeek大模型，无感交互+健康监测</h3>
-      <p>九牧推出AI卫浴场景品牌，依托DeepSeek大模型实现无感交互、健康监测等功能，开创智能家居新类目。</p>
-      <div class="meta-row"><span class="source">CSDN综合</span><span class="time">5月下旬</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">消费趋势</span>
-      <h3><a href="https://news.qq.com/rain/a/20250122A06WOB00" target="_blank">2025新奇特爆款7大趋势：情绪消费、健康养生、地域口味、科技创新</a></h3>
-      <p>TMIC天猫新品创新中心指出：情绪消费、健康养生、地域口味、科技创新是2025年新品打爆的核心催化剂。天然成分护肤品、户外运动服饰、个性化健康食品持续增长。</p>
-      <div class="meta-row"><span class="source">腾讯新闻</span><span class="time">5月持续</span></div>
-    </div>
-
-    <div class="card">
-      <span class="tag">CES创新</span>
-      <h3><a href="https://zhuanlan.zhihu.com/p/18365522234" target="_blank">CES 2025创新奖458款产品：20款最有趣新奇特盘点</a></h3>
-      <p>CES 2025共评选出458个创新奖获奖产品，涵盖AI穿戴、智能家居、健康科技、可持续材料等前沿领域，部分产品可通过DIY实现。</p>
-      <div class="meta-row"><span class="source">知乎</span><span class="time">5月</span></div>
-    </div>
-
-  </div>
-</div>
-
-<!-- ============ SECTION 10: 国家动态/政策 ============ -->
-<div class="section cat-10" id="s10">
-  <div class="section-title">
-    <span class="icon">🏛️</span> 国家动态新闻（进出口/扶持/补贴/政策）
+<!-- ====== 板块6: AI+电商/运营/客服/智能产品 ====== -->
+<div class="section" id="s6">
+  <div class="section-header">
+    <div class="icon" style="background:#ede9fe;">🤖</div>
+    <h2>AI + 视频/图片/运营/客服/智能产品</h2>
     <span class="count">12条</span>
   </div>
+  <div class="section-body">
 
-  <div class="highlight-box">
-    <strong>本周政策关键词：</strong>李强浙江调研产业链供应链 → 国务院印发城市更新"十五五"规划 → 商务部中美关税谈判300亿美元对等降税框架 → 华为提出"韬定律" → 天问二号发射成功 → 人造太阳创纪录 → 五部门发布超龄劳动者保障新规
-  </div>
-
-  <div class="card-grid">
-
-    <div class="card">
-      <span class="tag">领导调研</span>
-      <h3>李强浙江舟山宁波调研（5月25-27日）：提升产业链供应链韧性</h3>
-      <p>强调持续提升产业链供应链韧性，加快建设大宗商品资源配置枢纽。坚持政府主导、社会共建、多元互补，做好大宗商品和重要物资储备调节。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月25-27日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">重磅发布</span>
+      <h4><a href="https://www.sohu.com/a/1031056617_122675821" target="_blank" rel="noopener">⭐ GPT-5.5 5月28日静默升级：幻觉率降52.5%，MMLU得分96.8%</a></h4>
+      <p>搜狐5月28日报道：OpenAI对GPT-5.5 Instant进行重大静默升级，数学推理能力提升12%，token效率提升30%。在医疗、法律和金融等高风险领域幻觉率降低52.5%，可信度从"能用"走向"敢用"。</p>
+      <div class="source">📅 5月28日 · 来源：<a href="https://www.sohu.com/a/1031056617_122675821" target="_blank" rel="noopener">搜狐</a> | <a href="https://www.sohu.com/a/1018706157_121956424" target="_blank" rel="noopener">钛媒体</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">国务院</span>
-      <h3>国务院印发《城市更新"十五五"规划》：2030年取得重要进展</h3>
-      <p>涵盖城市开发建设方式转型、安全发展基础、人居环境改善、新旧动能转换、文化遗产保护、治理水平提升等六大方向。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月25-31日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">国产AI</span>
+      <h4><a href="https://news.qq.com/rain/a/20260528A040HW00" target="_blank" rel="noopener">⭐ DeepSeek首轮融资敲定：700亿巨资，国家大基金领投，估值450亿美元</a></h4>
+      <p>腾讯新闻5月28日报道：此前长期坚持"不融资"的DeepSeek首次向外部资本敞开大门，由国家级资金（国家集成电路产业投资基金）领投，融资规模升至700亿元（约100亿美元），刷新中国AI企业单笔融资纪录。</p>
+      <div class="source">📅 5月28日 · 来源：<a href="https://news.qq.com/rain/a/20260528A040HW00" target="_blank" rel="noopener">腾讯新闻</a> | <a href="https://www.163.com/dy/article/KS8M7EN60519QIKK.html" target="_blank" rel="noopener">网易/金融时报</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">商务部</span>
-      <h3>中美关税谈判重大进展：双方原则同意300亿美元对等降税框架（5月28日）</h3>
-      <p>商务部发言人何亚东5月28日表示，双方经贸团队围绕关税问题深入沟通，原则同意讨论同等规模产品对等降税框架安排，规模各为300亿美元或更多。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月28日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">AI+电商</span>
+      <h4><a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">⭐ 2026年被视为"首个AI消费落地大年"</a></h4>
+      <p>科创板日报6月2日报道：AI全面渗透618大促——京东AIPC/AI眼镜/智能学习机成交增200%、AI迷你工作站/工业感知设备成交暴涨10倍。天猫AI智能硬件整体增80%，AI眼镜单品增9倍。</p>
+      <div class="source">📅 6月2日 · 来源：<a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">科创板日报</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">工信部</span>
-      <h3>工信部发布2026年汽车标准化工作要点：聚焦新能源安全、智能网联（5月26日）</h3>
-      <p>持续提升电动汽车及动力电池安全标准，聚焦汽车电子、芯片等标准引领，面向AI汽车、新形态汽车开展标准前瞻突破。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月26日</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">驰腾可探索</span>
+      <h4><a href="https://blog.csdn.net/evendy_te/article/details/160869505" target="_blank" rel="noopener">AI视觉智能体2026年趋势：从辅助工具到全自主智能体</a></h4>
+      <p>2026年AI视觉技术实现多模态实时因果推理、全自主决策执行、商品数据→视觉内容自动生成。对标签/条码行业意味着：AI智能识别标签模板推荐、AI自动生成商品标签成为可能——驰腾可探索方向。</p>
+      <div class="source">📅 近期 · 来源：<a href="https://blog.csdn.net/evendy_te/article/details/160869505" target="_blank" rel="noopener">CSDN</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">市场监管</span>
-      <h3>京沪首次联合对三大外卖平台行政指导：美团/淘宝闪购/京东外卖（5月28日）</h3>
-      <p>京沪两市市场监管局签订网络餐饮食品安全合作框架协议，对美团、淘宝闪购、京东外卖开展联合行政指导，要求严格落实食品安全主体责任。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月28日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">阿里AI</span>
+      <h4><a href="https://news.qq.com/rain/a/20260521A07TLZ00" target="_blank" rel="noopener">阿里云推出千问云，定位"为AI Agent而生"的Agent基础设施</a></h4>
+      <p>腾讯新闻5月21日报道：5月20日阿里云峰会上正式发布千问云（qianwenai.com），聚合150余个模型系列、480余款主流模型API。千问与淘宝全面打通，上线AI购物体验。阿里全年AI产品收入破358亿元。</p>
+      <div class="source">📅 5月20日 · 来源：<a href="https://news.qq.com/rain/a/20260521A07TLZ00" target="_blank" rel="noopener">腾讯新闻</a> | <a href="https://finance.sina.com.cn/jjxw/2026-05-21/doc-inhyqiye9524183.shtml" target="_blank" rel="noopener">新浪财经</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">经济数据</span>
-      <h3>5月制造业PMI 50.0%（临界点）+ 1-4月工业企业利润增长18.2%</h3>
-      <p>制造业PMI 50.0%比上月降0.3个百分点，非制造业PMI 50.1%升0.7个百分点。1-4月规上工业企业利润24358.4亿元，同比增18.2%，股份制企业增长24%表现最佳。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月31日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">腾讯AI</span>
+      <h4><a href="https://www.sohu.com/a/1020035375_121956424" target="_blank" rel="noopener">腾讯混元Hy3两周Token调用量达Hy2的10倍，智能体场景增长16.5倍</a></h4>
+      <p>搜狐5月8日报道：腾讯混元Hy3 Preview上线后Token调用总量较Hy2增长超10倍，代码和Agent场景增长超16.5倍。马化腾5月13日回应AI落后质疑，称正"稳步追赶"。</p>
+      <div class="source">📅 5月8日 · 来源：<a href="https://www.sohu.com/a/1020035375_121956424" target="_blank" rel="noopener">搜狐</a> | <a href="https://www.tmtpost.com/7981815.html" target="_blank" rel="noopener">钛媒体</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">科技突破</span>
-      <h3>华为提出"韬（τ）定律"：中国首次提出半导体产业指导新原则（5月25日）</h3>
-      <p>以"时间缩微"替代"几何缩微"，预计到2031年基于韬定律的高端芯片晶体管密度有望达1.4纳米制程同等水平。长鑫科技5月27日科创板IPO过会。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月25日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">AI视频</span>
+      <h4><a href="https://news.qq.com/rain/a/20260520A08DOQ00" target="_blank" rel="noopener">全球首部95分钟AI长片《HELL GRIND》戛纳首映，由Seedance 2.0制作</a></h4>
+      <p>凤凰网科技5月20日报道：字节跳动旗下火山引擎携Seedance 2.0亮相第79届戛纳电影节。仅15人团队14天完成，制作成本不足50万美元（传统影片的1%）。标志AI视频生成从短片段进入长片时代。</p>
+      <div class="source">📅 5月19-20日 · 来源：<a href="https://news.qq.com/rain/a/20260520A08DOQ00" target="_blank" rel="noopener">凤凰网科技</a> | <a href="https://www.sohu.com/a/1025298048_305277" target="_blank" rel="noopener">搜狐/火山引擎</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">能源政策</span>
-      <h3>"十五五"新型电网投资预计超5万亿元 + 算力中心年用电1700亿度</h3>
-      <p>截至4月底全国发电装机容量39.9亿千瓦，太阳能12.5亿千瓦（+26.2%）。算力设施正由十万千瓦级向百万千瓦级跃升，年用电量占全社会1.6%。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月25-31日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">AI监管</span>
+      <h4><a href="https://www.cac.gov.cn/2026-04/30/c_1779289298718765.htm" target="_blank" rel="noopener">中央网信办部署"清朗·整治AI应用乱象"专项行动（为期4个月）</a></h4>
+      <p>中央网信办4月30日发布通知，5月6日起在全国范围内部署为期4个月专项行动。《人工智能终端智能化分级》国家标准（GB/Z 177—2026）5月12日发布。截至4月底全国868款生成式AI服务完成备案。</p>
+      <div class="source">📅 4月30日/5月12日 · 来源：<a href="https://www.cac.gov.cn/2026-04/30/c_1779289298718765.htm" target="_blank" rel="noopener">中央网信办</a> | <a href="https://www.sohu.com/a/1030729153_120491808" target="_blank" rel="noopener">网经社AI月报</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">央企动态</span>
-      <h3>天问二号发射成功（5月29日）+ 人造太阳"中国环流三号"创纪录</h3>
-      <p>5月29日1时31分天问二号探测器成功发射，进入地-小行星转移轨道。中核集团"中国环流三号"实现等离子体电流100万安培、离子温度1亿度、高约束模式运行。</p>
-      <div class="meta-row"><span class="source">国资e周/新华财经</span><span class="time">5月29日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">AI Agent</span>
+      <h4><a href="https://www.sohu.com/a/1030729153_120491808" target="_blank" rel="noopener">AI Agent成为2026年5月最核心主题词</a></h4>
+      <p>网经社AI月报5月汇总：从阿里千问云"为Agent而生"到腾讯Hy3智能体场景增长16.5倍，再到百度成立模型委员会（BMC），AI Agent能力（工具使用、多步规划、异常恢复、长时记忆）已成为衡量大模型实用性的核心指标。</p>
+      <div class="source">📅 5月 · 来源：<a href="https://www.sohu.com/a/1030729153_120491808" target="_blank" rel="noopener">网经社AI月报</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">央企工程</span>
-      <h3>南方电网宝池锂钠混合储能站投产（5月25日）+ "湾区伶仃"号下水（5月27日）</h3>
-      <p>国内首座大型锂钠混合储能站在云南投产。全球首艘自航式水体自然交换型养殖工船在广东江门下水，标志深远海养殖进入"科技牧海"新阶段。</p>
-      <div class="meta-row"><span class="source">国资e周</span><span class="time">5月25-27日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">AI+运营</span>
+      <h4><a href="https://finance.sina.com.cn/wm/2026-05-18/doc-inhyivuf7956418.shtml" target="_blank" rel="noopener">京东AI客服"京小智"服务超百万商家，大模型服务量增14倍</a></h4>
+      <p>新浪财经5月18日报道：618期间京东AI客服全面升级，数字人带货成交额突破7000万元。AI从选品、投放、内容生产到客服全链路渗透，推动电商从规模导向转向价值导向。</p>
+      <div class="source">📅 5月18日 · 来源：<a href="https://finance.sina.com.cn/wm/2026-05-18/doc-inhyivuf7956418.shtml" target="_blank" rel="noopener">新浪财经</a></div>
     </div>
 
-    <div class="card">
-      <span class="tag">人社政策</span>
-      <h3>五部门发布《超龄劳动者基本权益保障暂行规定》：7月1日起施行</h3>
-      <p>我国首部明确超龄劳动者权益的专门规章。同时市场监管总局启动信用赋能整治"内卷式"竞争专项行动（5月至12月），中央网信办开展"清朗·优化营商网络环境"专项行动。</p>
-      <div class="meta-row"><span class="source">新华财经</span><span class="time">5月25-31日</span></div>
+    <div class="item">
+      <span class="tag tag-insight">国际动态</span>
+      <h4>Google Gemini整合进Gboard输入法，AI从工具变成基础设施</h4>
+      <p>Google将Gemini能力直接嵌入手机输入法Gboard，用户打字时即可调用AI能力。亚马逊关停Rufus聊天机器人，推出Alexa购物智能助手。Meta裁员近8000人聚焦AI转型。</p>
+      <div class="source">📅 5月 · 来源：AI观察日记</div>
     </div>
 
-    <div class="card">
-      <span class="tag">进出口</span>
-      <h3>海关助力超880亿元进出口货物享RCEP政策红利</h3>
-      <p>RCEP对15国全面生效两周年，黄埔海关共签发RCEP原产地证书超6.6万份，RCEP项下进出口货物享惠货值达880.65亿元。外贸扶持政策持续加码。</p>
-      <div class="meta-row"><span class="source">海关/商务部</span><span class="time">5月-6月</span></div>
+    <div class="item">
+      <span class="tag tag-opportunity">驰腾可探索</span>
+      <h4>制造企业大模型选型六大维度：任务匹配度+数据安全+部署灵活度最关键</h4>
+      <p>一道科技5月30日发布制造企业选型指南，建议中小制造企业优先考虑性价比更高的开源/轻量级国产大模型。六大评估维度：任务匹配度、数据安全性、部署灵活性、总拥有成本、本地化服务、生态成熟度。</p>
+      <div class="source">📅 5月30日 · 来源：一道科技</div>
     </div>
 
   </div>
 </div>
 
-<!-- FOOTER -->
+<!-- ====== 板块7: 国家政策动态 ====== -->
+<div class="section" id="s7">
+  <div class="section-header">
+    <div class="icon" style="background:#fce7f3;">🏛️</div>
+    <h2>国家动态新闻（进出口 · 扶持 · 补贴 · 政策）</h2>
+    <span class="count">10条</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item">
+      <span class="tag tag-opportunity">重大利好</span>
+      <h4><a href="https://www.gov.cn/zhengce/202604/content_7067510.htm" target="_blank" rel="noopener">⭐ 中国对53个非洲建交国全面实施零关税（2026.5.1起，为期两年）</a></h4>
+      <p>国务院关税税则委员会公告，自2026年5月1日至2028年4月30日，对同中国建交的20个不属于最不发达国家的非洲国家以特惠税率形式实施零关税，扩大高水平对外开放，推动中非共同发展。</p>
+      <div class="source">📅 4月30日发布/5月1日生效 · 来源：<a href="https://www.gov.cn/zhengce/202604/content_7067510.htm" target="_blank" rel="noopener">中国政府网</a> | <a href="http://m.mof.gov.cn/zcjd/202604/t20260428_3988618.htm" target="_blank" rel="noopener">财政部</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-opportunity">外贸利好</span>
+      <h4>⭐ 六部门发文支持电商：推进跨境电商、拓展丝路电商</h4>
+      <p>商务部等六部门印发《关于更好服务实体经济 推进电子商务高质量发展的指导意见》，提出5方面16条举措，重点推进跨境电商、拓展"丝路电商"、加快制度型开放、推动规则衔接。</p>
+      <div class="source">📅 5月 · 来源：搜狐外贸新规汇总</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">立法动态</span>
+      <h4><a href="https://www.gov.cn/zhengce/content/202605/content_7068345.htm" target="_blank" rel="noopener">国务院2026年度立法工作计划公布：民营经济促进法、人工智能法在列</a></h4>
+      <p>5月11日中国政府网发布国办发〔2026〕14号文件，涵盖民营经济促进法、人工智能法、数字经济促进法等重点立法项目，为行业发展提供法律框架。</p>
+      <div class="source">📅 5月11日 · 来源：<a href="https://www.gov.cn/zhengce/content/202605/content_7068345.htm" target="_blank" rel="noopener">中国政府网</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">外贸法规</span>
+      <h4>新修订《海商法》5月1日正式施行：托运人首责原则取代收货人担责</h4>
+      <p>这是该法自1993年施行以来首次系统性修订，第93条关于卸货港无人提货的责任认定从"收货人担责"全面转向"托运人首责"，外贸企业运输合同风险需重新评估。</p>
+      <div class="source">📅 5月1日 · 来源：搜狐外贸新规</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-alert">美国关税</span>
+      <h4>美国铝铜关税持续：钢铝铜制品50%关税，衍生产品25%关税</h4>
+      <p>2026年4月6日起，完全或几乎完全由钢/铝/铜制成的产品适用50%进口从价关税，衍生产品25%。近50项钢铝衍生品关税税率2027年底前暂时下调。</p>
+      <div class="source">📅 5月 · 来源：搜狐外贸新规</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-alert">出口合规</span>
+      <h4>韩国网络摄像头安全强制标准5月26日生效，南非加强跨境电商进口监管</h4>
+      <p>韩国要求网络摄像头出厂时强制设置强密码。南非9月20日全面实施出口前验证和强制合格证书制度，中国进口商品为首批试点，重点监管电器/电缆、家具、化妆品等。</p>
+      <div class="source">📅 5月 · 来源：搜狐外贸新规</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">对外投资</span>
+      <h4>国务院发布《对外投资规定》，7月1日起施行</h4>
+      <p>4月17日国务院常务会议通过，规范对外投资行为，保障国家经济安全，自2026年7月1日起施行。</p>
+      <div class="source">📅 4月 · 来源：人民数据</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">离境退税</span>
+      <h4>商务部：加力优化离境退税措施，扩大入境消费</h4>
+      <p>5月22日商务部发布通知，优化离境退税政策以扩大入境消费，促进国际旅游和服务贸易发展。</p>
+      <div class="source">📅 5月22日 · 来源：商务部</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">医保目录</span>
+      <h4>2026年国家医保目录调整方案发布，首次纳入商保创新药</h4>
+      <p>5月31日国家医保局正式发布调整方案，首次将"纳入商保创新药目录的药品"列入申报条件，药品申报截止时间延至6月10日。</p>
+      <div class="source">📅 5月31日 · 来源：央视新闻</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">海峡论坛</span>
+      <h4>国台办：第十八届海峡论坛将于6月中旬在福建举办</h4>
+      <p>6月3日国务院台办新闻发布会宣布，6月13日举办论坛大会，促进两岸经济文化交流。</p>
+      <div class="source">📅 6月3日 · 来源：央广网</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ====== 板块8: 热梗/爆款/热搜 ====== -->
+<div class="section" id="s8">
+  <div class="section-header">
+    <div class="icon" style="background:#fef2f2;">🔥</div>
+    <h2>最新热梗 · 爆款产品 · 热搜</h2>
+    <span class="count">7条</span>
+  </div>
+  <div class="section-body">
+
+    <div class="item">
+      <span class="tag tag-insight">顶流爆款梗</span>
+      <h4><a href="https://zhuanlan.zhihu.com/p/2025142253308397369" target="_blank" rel="noopener">2026年全网六大类热梗合集：奶绿波、龙虾、酸黄瓜、哭哭马持续刷屏</a></h4>
+      <p>知乎4月8日整理100条热梗，分六大类：顶流爆款梗（奶绿波=高速堵车刷屏梗、龙虾=AI智能体OpenClaw昵称、酸黄瓜=自嘲收入不高、哭哭马=丧萌自嘲）、打工人专属梗、情绪治愈梗、趣味玩梗梗、马年限定梗、科技潮流梗。</p>
+      <div class="source">📅 3-4月 · 来源：<a href="https://zhuanlan.zhihu.com/p/2025142253308397369" target="_blank" rel="noopener">知乎</a> | <a href="https://www.toutiao.com/article/7618791057832886836/" target="_blank" rel="noopener">今日头条</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">热搜话题</span>
+      <h4><a href="https://news.qq.com/rain/a/20260602Q09JVE00" target="_blank" rel="noopener">"月薪一万是月薪五千的六倍"——"数学错误"戳中网友痛点</a></h4>
+      <p>该话题6月2日登上微博/百度热搜，源于"结余逻辑"：假设两者基础生活成本相同均为4000元，结余分别为6000元和1000元，确实相差六倍。折射出打工人对收入增长和储蓄的集体焦虑。</p>
+      <div class="source">📅 6月2日 · 来源：<a href="https://news.qq.com/rain/a/20260602Q09JVE00" target="_blank" rel="noopener">腾讯新闻</a> | <a href="https://www.163.com/dy/article/KUH02NNR05564O96.html" target="_blank" rel="noopener">网易</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-alert">诈骗警示</span>
+      <h4><a href="https://news.qq.com/rain/a/20260601Q0961400" target="_blank" rel="noopener">"崩老头"骗局盯上80后90后：1500元可购全套AI换脸拟声工具</a></h4>
+      <p>腾讯新闻6月1日报道：专门针对中年男性的AI换脸诈骗工具在地下市场流通，利用深度伪造技术进行精准诈骗。"崩"在北方方言里意为哄骗、套取，"老头"指80后90后中年男性。淄博警方已揭开灰产内幕。</p>
+      <div class="source">📅 6月1日 · 来源：<a href="https://news.qq.com/rain/a/20260601Q0961400" target="_blank" rel="noopener">腾讯新闻</a> | <a href="https://finance.sina.com.cn/wm/2026-06-02/doc-inhzzcpr1683327.shtml" target="_blank" rel="noopener">新京报/新浪</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">年轻人群</span>
+      <h4><a href="https://www.qian-gua.com/blog/detail/3324.html" target="_blank" rel="noopener">2026年Q1小红书八大热点：AI开年狂想、千问送奶茶、豆包穿搭</a></h4>
+      <p>千瓜数据4月7日发布小红书Q1热点内容解读：AI相关话题（千问送奶茶、豆包穿搭等）成为年轻人社交分享的重要内容方向，女性力量、观鸟等生活方式类内容同样火爆。</p>
+      <div class="source">📅 4月7日 · 来源：<a href="https://www.qian-gua.com/blog/detail/3324.html" target="_blank" rel="noopener">千瓜数据</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">中年人群</span>
+      <h4>事业编考生笔试第1因围报被取消资格，引发社会公平讨论</h4>
+      <p>该话题6月3日登上热榜，热度超739万，反映了中年群体对就业公平和体制内机会的高度关注。</p>
+      <div class="source">📅 6月3日 · 来源：热文号</div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">618爆款</span>
+      <h4><a href="https://i.ifeng.com/c/8tZBe0TuXeX" target="_blank" rel="noopener">618热搜爆款：iPhone、华为手机、小米15、AI眼镜霸榜</a></h4>
+      <p>京东618开门红数据：iPhone开售1分钟成交额破亿，华为手机10分钟成交额同比增长超5倍。天猫AI眼镜单品成交同比飙升9倍，成为本届618最大黑马品类。</p>
+      <div class="source">📅 5月31日-6月2日 · 来源：<a href="https://i.ifeng.com/c/8tZBe0TuXeX" target="_blank" rel="noopener">凤凰网科技</a> | <a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">科创板日报</a></div>
+    </div>
+
+    <div class="item">
+      <span class="tag tag-insight">老年人群</span>
+      <h4><a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">智能学习机、大屏AI手机等"银发科技"产品618热销</a></h4>
+      <p>科创板日报6月2日报道：京东618期间AIPC、AI眼镜、大屏AI手机、智能学习机等产品成交额同比增幅200%，其中大屏AI手机和智能学习机在中老年群体中渗透率显著提升。</p>
+      <div class="source">📅 6月2日 · 来源：<a href="https://news.qq.com/rain/a/20260602A09MID00" target="_blank" rel="noopener">科创板日报</a></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 页脚 -->
 <div class="footer">
-  <p>📋 本简报覆盖2025年5月25日至5月31日期间10大主题板块共<strong>66条</strong>资讯</p>
-  <p>数据来源：新华财经、央视新闻、国资e周、CSDN、新浪科技、搜狐、知乎、AMZ123、跨境知道等</p>
-  <p style="margin-top:8px;opacity:0.7;">生成时间：2025年6月3日 · 仅供参考，请以原文为准</p>
+  <p>本简报由 AI 辅助生成 · 所有标题链接均来自真实公开报道 · 点击即可验证</p>
+  <p style="margin-top:4px;">深圳市度点科技有限公司 · 驰腾 CHITENG 品牌 · 标签打印机/条码机/耗材/Dlabel软件</p>
+  <p style="margin-top:8px;font-size:12px;color:#94a3b8;">© 2026 资讯简报 · 生成时间 2026年6月3日</p>
 </div>
 
 </div>
+
 </body>
 </html>
